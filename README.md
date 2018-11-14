@@ -24,8 +24,8 @@ pytest
 
 ## Test examples
 Test are checking if input string (combined street name and house number) is properly splitt into two separate filed in json format.
-In this code example only two regular expressions were used, but in the same time this does not cover last test case ("Calle 39 No 1540"), which may be achived by split first regex into two separate.
-To see this failing test, just go to test_address.py and uncomment line with the assertion.
+In this code example three regular expressions were used. There is also solution using 2 expression, but it's commented in regression list place, casue of usual rule: simpler is better.
+
 
 ## Authors
 
