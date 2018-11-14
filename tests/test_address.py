@@ -16,4 +16,4 @@ def test_address_line_splitting():
     assert addr.split_street_name_and_number("4, rue de la revolution") == json.dumps({"street": "rue de la revolution", "housenumber": "4"}, ensure_ascii=False)
     assert addr.split_street_name_and_number("200 Broadway Av") == json.dumps({"street": "Broadway Av", "housenumber": "200"}, ensure_ascii=False)
     assert addr.split_street_name_and_number("Calle Aduana, 29") == json.dumps({"street": "Calle Aduana", "housenumber": "29"}, ensure_ascii=False)
-    #assert addr.split_street_name_and_number("Calle 39 No 1540") == json.dumps({"street": "Calle 39", "housenumber": "No 1540"}, ensure_ascii=False)
+    assert addr.split_street_name_and_number("Calle 39 No 1540") == json.dumps({"street": "Calle 39", "housenumber": "No 1540"}, ensure_ascii=False)
