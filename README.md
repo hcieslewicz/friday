@@ -1,5 +1,5 @@
 # Friday
-Task for Friday
+Example of using pytest for testing split street name and_number
 
 ## Getting Started
 
